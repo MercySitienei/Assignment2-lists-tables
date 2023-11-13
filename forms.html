@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mercy Sitienei">
+    <link rel="icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADB FELLOWSHIP APPLICATION</title>
+</head>
+<body>
+    <form action="basicinfor.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Basic Information</legend>
+            <label for="FullName">Full Name*</label>
+            <input type="text" placeholder="Jane Smith" name="FullName" id="FullName" required>
+            <label for="email">Email*</label>
+            <input type="text" placeholder="enter your email address" name="email" id="email" required> 
+            <label for="age">Age*</label>
+            <input type="number" name="Age" id="age" required> <br>
+            <label for="phone">Phone number</label>
+            <input type="tel" pattern="[0-9]{10}" name="mobile" id="phone" maxlength="10" placeholder="0722222222">
+            <label for="DOB">Date of Birth</label>
+            <input type="date" name="birthdate" id="DOB" min="1980-01-01" max="2005-01-01"> <br>
+            <label for="country">Country of residence</label>
+            <select name="country" id="country">
+                <option selected value="Kenya">Kenya</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="Burundi">Burundi</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Interests</legend>
+            Gender <br>
+            <input type="radio" name="gender" id="Male" value="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="gender" id="Female" value="Female">
+            <label for="Female">Female</label>
+            <input type="radio" name="gender" id="Other" value="Other" checked>
+            <label for="Other">Other</label> <br>
+            Hobbies <br>
+            <input type="checkbox" name="hobby1" id="hobby1" value="Sports">
+            <label for="hobby1">Sports</label>
+            <input type="checkbox" name="hobby2" id="hobby2" value="Reading">
+            <label for="hobby2">Reading</label>
+            <input type="checkbox" name="hobby3" id="hobby3" value="Music">
+            <label for="hobby3">Music</label>
+            <input type="checkbox" name="hobby4" id="hobby4" value="Travel">
+            <label for="hobby4">Travel</label>
+        </fieldset> <br>
+        <label for="Comments">Comments</label>
+        <textarea name="comments" id="Comments" cols="30" rows="10" placeholder="Type here"></textarea> <br>
+        <input type="reset" value="Reset form"> <br>
+    <button type="submit" name="submit" >SUBMIT</button>
+
+    </form>
+</body>
+</html>
